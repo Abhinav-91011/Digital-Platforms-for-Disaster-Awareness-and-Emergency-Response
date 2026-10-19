@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DisasterConnect India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>DisasterConnect India</h1>
+    <p>Awareness Today. Safety Tomorrow.</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#disasters">Disasters</a>
+      <a href="#preparedness">Preparedness</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Be Aware. Be Prepared. Stay Safe.</h2>
+      <p>
+        Learn about natural disasters, discover safety measures
+        and prepare yourself for emergencies.
+      </p>
+      <a class="button" href="#disasters">Explore Safety Guides</a>
+    </section>
+
+    <section class="emergency">
+      <h2>Emergency Information</h2>
+      <p>India's emergency response number: <strong>112</strong></p>
+      <p>For current warnings, check official government sources.</p>
+      <p class="notice">
+        This educational website does not provide verified
+        real-time emergency alerts.
+      </p>
+    </section>
+
+    <section id="disasters">
+      <h2>Disaster Awareness Centre</h2>
+      <p>Select a disaster to learn basic safety measures.</p>
+
+      <label for="disasterSearch">Search disaster type:</label>
+      <input id="disasterSearch" type="text"
+             placeholder="e.g. flood, earthquake">
+
+      <div class="cards">
+        
+        <article class="card" data-disaster="flood">
+        <h3>Floods🌊</h3>
+        <p>Learn how to prepare for rising water levels.</p>
+        <a class="button" href="https://www.cdc.gov/floods/safety/floodwater-after-a-disaster-or-emergency-safety.html">
+            View Safety Guidelines
+        </a>
+        </article>
+
+
+        
+<article class="card" data-disaster="earthquake">
+  <h3>Earthquakes🌎</h3>
+  <p>Learn protective actions during ground shaking.</p>
+  <a class="button" href="https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html">
+    View Safety Guidelines
+  </a>
+</article>
+
+
+        
+<article class="card" data-disaster="hurricane">
+  <h3>Hurricane🌪️</h3>
+  <p>Protect yourself from hazards in your home.</p>
+  <a class="button" href="https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html">
+    View Safety Guidelines
+  </a>
+</article>
+
+        
+<article class="card" data-disaster="landslide">
+  <h3>Landslides⛰️</h3>
+  <p>Recognize warning signs and follow local guidance.</p>
+  <a class="button" href="https://www.cdc.gov/landslides-and-mudslides/about/index.html">
+    View Safety Guidelines
+  </a>
+</article>
+
+
+       
+<article class="card" data-disaster="wildfire">
+  <h3>Wildfires🔥</h3>
+  <p>Learn how to stay safe from forest fires and protect yourself from smoke.</p>
+  <a class="button" href="https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html">
+    View Safety Guidelines
+  </a>
+</article>
+
+
+
+<article class="card" data-disaster="drought">
+  <h3>Drought☀️</h3>
+  <p>Learn how to conserve water and prepare for prolonged dry conditions.</p>
+  <a class="button" href="https://www.cdc.gov/drought-health/about/index.html">
+    View Safety Guidelines
+  </a>
+</article>
+
+      </div>
+
+      <div id="guide" class="guide" aria-live="polite">
+        Select a disaster to display its safety guide.
+      </div>
+    </section>
+
+    <section id="preparedness">
+      <h2>Emergency Kit Checklist</h2>
+      <p>Tick the items you have prepared.</p>
+
+      <div class="checklist">
+        <label><input type="checkbox"> Drinking water</label>
+        <label><input type="checkbox"> First-aid supplies</label>
+        <label><input type="checkbox"> Torch and spare batteries</label>
+        <label><input type="checkbox"> Essential medicines</label>
+        <label><input type="checkbox"> Dry food</label>
+        <label><input type="checkbox"> Important documents in a waterproof bag</label>
+        <label><input type="checkbox"> Charged phone and power bank</label>
+        <label><input type="checkbox"> Emergency contact list</label>
+      </div>
+
+      <p id="progress">Items prepared: 0 of 8</p>
+    </section>
+
+    <section class="alert-section">
+      <h2>Sample Alert Demonstration</h2>
+      <p>
+        This feature demonstrates how a disaster notification
+        might look. It is not a real government alert.
+      </p>
+      <button onclick="showSampleAlert()">Show Sample Alert</button>
+      <div id="alertBox" aria-live="polite"></div>
+    </section>
+
+    <section id="resources">
+      <h2>Official Information Resources</h2>
+      <ul>
+        <li>
+          <a href="https://ndma.gov.in/" target="_blank"
+             rel="noopener noreferrer">
+            National Disaster Management Authority (NDMA)
+          </a>
+        </li>
+        <li>
+          <a href="https://mausam.imd.gov.in/" target="_blank"
+             rel="noopener noreferrer">
+            India Meteorological Department (IMD)
+          </a>
+        </li>
+        <li>
+          <a href="https://sachet.ndma.gov.in/" target="_blank"
+             rel="noopener noreferrer">
+            Sachet: Official Disaster Alert Portal
+          </a>
+        </li>
+      </ul>
+      <p>Always follow instructions from authorized local authorities.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 DisasterConnect India | Educational Project</p>
+    <p>Designed for disaster awareness and emergency preparedness.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
